@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookManagement.Domain.Validators;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace BookManagement.Domain.Models
 
         [Required(ErrorMessage = "Published Date is required.")]
         [DataType(DataType.Date, ErrorMessage = "Published Date must be a valid date.")]
-        //[DateInPast(ErrorMessage = "Published Date cannot be in the future.")]
+        [DateInPast(ErrorMessage = "Published Date cannot be in the future.")]
         public DateTime PublishedDate { get; set; }
     }
 }

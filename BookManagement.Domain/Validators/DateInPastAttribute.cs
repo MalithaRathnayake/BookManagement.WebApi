@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace KooBits.BookManagement.Validators
+namespace BookManagement.Domain.Validators
 {
     public class DateInPastAttribute : ValidationAttribute
     {
