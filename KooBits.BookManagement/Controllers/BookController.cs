@@ -48,7 +48,7 @@ namespace KooBits.BookManagement.Controllers
                 await _bookServices.CreateBook(book);
                 return CreatedAtAction(nameof(GetBook), new { id = book.Id }, book);
             }
-            catch(DuplicateNameException ex) // Custom exception generation module need to implement to refactor exception generations
+            catch(DuplicateNameException ex) // TODO : Custom exception generation module need to implement to refactor exception generations
             {
                 _logger.LogError(ex, "Duplicate book ID.");
                 return StatusCode(500, "Duplicate book ID.");
