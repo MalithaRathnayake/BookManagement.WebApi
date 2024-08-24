@@ -22,4 +22,18 @@ Instructions :
 10.DataAnnotations used for Validations.
 
 11. Testing : Once the project started successfully please use Swagger documentaion for testing below Apis,
+    GET
+    /api/Book
+
+    POST
+    /api/Book
+
+    PUT
+    /api/Book
+
+    GET
+    /api/Book/{id}
+
+    DELETE
+    /api/Book/{id}
     
