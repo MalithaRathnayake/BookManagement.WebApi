@@ -11,7 +11,7 @@ Instructions :
 
 5.Swagger Api documentation provided for Api Testing.
 
-6.Entityframework Core Inmemory DB is used in this project.
+6.Entityframework Core in-memory DB is used in this project.
 
 7.Default .net Dependency Injection is used in this project.
 
